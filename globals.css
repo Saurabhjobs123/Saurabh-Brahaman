@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm Cream Background */
+    --background: 40 33% 98%;
+    /* Dark Charcoal Text */
+    --foreground: 20 14% 4%;
+
+    /* Deep Saffron / Gold */
+    --primary: 35 90% 50%;
+    --primary-foreground: 60 9% 98%;
+
+    /* Royal Maroon */
+    --secondary: 345 60% 35%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 35 50% 90%;
+    --accent-foreground: 24 9% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 35 90% 50%;
+
+    --radius: 0.5rem;
+    --card: 40 33% 99%;
+    --card-foreground: 20 14% 4%;
+  }
+
+  .dark {
+    --background: 20 14% 4%;
+    --foreground: 60 9% 98%;
+
+    --primary: 35 90% 50%;
+    --primary-foreground: 60 9% 98%;
+
+    --secondary: 345 60% 35%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 12 6% 15%;
+    --muted-foreground: 24 5% 65%;
+
+    --accent: 12 6% 15%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 12 6% 15%;
+    --input: 12 6% 15%;
+    --ring: 35 90% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
